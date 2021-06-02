@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <title>NYTimes Archive Demo</title>
+  
+</head>
+<body>
+ 
+  
+  </div>
+  <header class="header">
+    <h1>New York Times Archive</h1>
+    <p id="currentDay"> </p>
+  </header>
+
+  <main class="container">
+
+    <div class="inputpanel">
+      <button id="myBtn">Enable Proxy</button>
+      <div id="myModal" class="modal">
+    
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>The NYTimes Archive API requires a proxy server for access. You can receive temporary access with the following link. 
+          <a href="https://cors-anywhere.herokuapp.com/corsdemo" target="_blank">Click Here to Enable Proxy</a>
+        </p>
+      </div>
+      </div>
+      <p>The website funtionality won't work without a proxy server. Click the button and follow the link to enable the Headline Search.</p><br><p> Subscribe to NYTimes for best user experience.</p>
+    <div class="col-2">
+      <div id="save-container">
+        <p class = "prev">Previous Searches</p>
+    
+      </div>
+    
+    </div>
+    </div>
+
+   
+
+     
+
+    </div>
+    <div class="story-cont">
+      <div class="inputCard">
+        <h2 class="card-header">Enter a Year and Month</h2>
+        <form id="user-form" class="card-body">
+          <label class="form-label" for="year">Year</label>
+          <select name="year" id="year"></select>
+          <label class="form-label" for="month">Month</label>
+          <select name="month" id="month">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+          </select>
+          <button type="submit" class="btn">Get History</button>
+        </form>
+      
+        <div class="col-2">
+          <div id="save-container">
+      
+          </div>
+      
+        </div>
+      <h2 class="subtitle">Headlines For: <span id="monthYear"></span></h2>
+      <div id="stories-container" class="list-group"></div>
+      
+    </div>
+
+
+
+  </main>
+  <script src="assets/javascript/javascript.js"></script>
+</body>
+</html>
